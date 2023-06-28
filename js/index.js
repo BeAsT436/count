@@ -5,14 +5,19 @@ valueElement.textContent = counter
 
 const btns = document.querySelectorAll(".btn")
 
+const ACTIONS = {
+    ADD: "add",
+    SUB: "sub"
+}
+
 btns.forEach((btn) => {
     const classes = btn.classList
     btn.addEventListener("click", () => {
-        if (classes.contains("add")) {
+        if (classes.contains(ACTIONS.ADD)) {
             counter++
             valueElement.textContent = counter
             localStorage.setItem("counter", counter)
-        } else if (classes.contains("sub")) {
+        } else if (classes.contains(ACTIONS.SUB)) {
             counter--
             valueElement.textContent = counter
             localStorage.setItem("counter", counter)
@@ -23,4 +28,7 @@ btns.forEach((btn) => {
         }
 
     })
+})
+btn.addEventListener("mouseover", () =>{
+    btn.style.backgroundColor = "green"
 })
