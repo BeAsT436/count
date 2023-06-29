@@ -29,6 +29,3 @@ btns.forEach((btn) => {
 
     })
 })
-btn.addEventListener("mouseover", () =>{
-    btn.style.backgroundColor = "green"
-})

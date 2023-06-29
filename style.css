@@ -28,7 +28,7 @@ p {
     padding: 10px;
     cursor: pointer;
     color: white;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     box-sizing: border-box;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding-box;
